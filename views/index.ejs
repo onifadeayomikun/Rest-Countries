@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Public APIs</title>
+</head>
+<body>
+    <div class="country-input">
+         <form action="/info" method="get">
+            <label for="Country:">Country's Name: </label>
+                <input type="text" name="name">
+        </form>
+    </div>
+
+    <% if (locals.error) { %>
+        <p>Message: <%= error %></p>
+    <% } else { %>
+      
+    <div class="response-area">
+        <p>Official Name: <%= locals.officialName %> </p>
+        <p>Name in Country's Language: <%= locals.countryName %></p>
+        <p>Capital City: <%= locals.capital %></p>
+        <p>Official Language(s): <%= locals.language %> </p>
+        <p>Bordering Countries: <%= locals.borders %> </p>
+        <p>Population: <%= locals.population %> </p>
+    </div>
+    <% } %>
+</body>
+</html>

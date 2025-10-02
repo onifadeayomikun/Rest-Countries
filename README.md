@@ -8,8 +8,10 @@ Features
 - Search for countries by name
 - View detailed country information (capital, population, languages etc.)
 
+
 Install Dependencies
 -npm install
 
-Running the Server
+
+Run the Server
 -nodemon index.js

@@ -10,8 +10,8 @@ Features
 
 
 Install Dependencies
--npm install
+- npm install
 
 
 Run the Server
--nodemon index.js
+- nodemon index.js
